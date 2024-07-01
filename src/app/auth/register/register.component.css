@@ -1,0 +1,13 @@
+form {
+  height: 34 rem; /* 1rem = 16px */
+  border: .1rem solid #ededed;
+  background-color: #e1e81a;
+}
+
+mat-form-field {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+
