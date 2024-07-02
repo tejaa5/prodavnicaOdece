@@ -1,11 +1,14 @@
 <mat-toolbar>
-  <div>
+  <div fxLayoutGap="12px">
+
+    <a (click)="openProfile(this.userService.currentUser.id)"><mat-icon>account_circle</mat-icon></a>
     <a routerLink="/">	<mat-icon>home</mat-icon></a>
   </div>
 
   <div fxFlex fxLayoutAlign="end" fxLayoutGap="12px" fxHide.xs>
     <a routerLink="/login">Login</a>
     <a routerLink="/register">Registracija</a>
+
     <a routerLink="/korpa"><mat-icon>add_shopping_cart</mat-icon></a>
 
   </div>

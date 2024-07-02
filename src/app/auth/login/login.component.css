@@ -1,0 +1,23 @@
+form {
+
+  border: .1rem solid #ededed;
+  background-color:#fcc203 ;
+
+  padding: 40px 0;
+}
+
+mat-form-field {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+mat-error{
+  color: red;
+}

@@ -1,1 +1,26 @@
-<p>login works!</p>
+<section>
+  <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1rem" #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+
+    <mat-form-field>
+      <input type="email" matInput placeholder="Email" name="email" ngModel required #emailInput="ngModel">
+
+      <mat-error *ngIf="emailInput.hasError('required')">Polje ne sme da bude prazno.</mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <input type="password" matInput placeholder="Lozinka" name="password" ngModel required
+             #passInput="ngModel" minlength="8">
+
+
+      <mat-hint align="end">{{ passInput.value?.length }} / 8</mat-hint>
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="warn" [disabled]="f.invalid">Uloguj se</button>
+
+
+    <mat-label *ngIf="errorExists">{{ errorText }}</mat-label>
+    <a routerLink="/register">Nemate nalog? Registrujte se.</a>
+  </form>
+</section>

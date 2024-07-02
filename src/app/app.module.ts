@@ -11,6 +11,8 @@ import {FormsModule} from "@angular/forms";
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { KorpaComponent } from './korpa/korpa.component';
+import {UserService} from "./auth/user.service";
+import { ProfilComponent } from './auth/profil/profil.component';
 
 
 
@@ -19,7 +21,8 @@ import { KorpaComponent } from './korpa/korpa.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    KorpaComponent
+    KorpaComponent,
+    ProfilComponent
 
 
     ],
@@ -34,7 +37,8 @@ import { KorpaComponent } from './korpa/korpa.component';
 
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    UserService
   ],
   bootstrap: [AppComponent]
 })

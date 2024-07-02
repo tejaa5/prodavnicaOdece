@@ -1,7 +1,8 @@
 form {
-  height: 34 rem; /* 1rem = 16px */
+  height: 34 rem;
+
   border: .1rem solid #ededed;
-  background-color: #e1e81a;
+  background-color: #fcc203;
 }
 
 mat-form-field {
@@ -10,4 +11,7 @@ mat-form-field {
   margin-bottom: 5px;
 }
 
+mat-error{
+  color: red;
+}
 
