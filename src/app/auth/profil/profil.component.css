@@ -1,0 +1,11 @@
+form {
+
+  border: .1rem solid #3c3c3c;
+  background-color: #fcc203 ;
+
+  padding: 40px 0;
+}
+
+mat-form-field {
+  width: 400px;
+}
